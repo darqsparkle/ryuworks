@@ -1,26 +1,72 @@
-nav {
-    background-color: #282c34; /* Background color for the navbar */
-    padding: 10px 20px; /* Spacing around the navbar */
-}
-
+/* General Navbar Styles */
 .navbar {
-    list-style-type: none; /* Remove bullet points */
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space items evenly */
+    background-color: #282c34;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #61dafb;
 }
 
-.navbar li {
-    margin: 0 15px; /* Spacing between items */
+.brand a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.navbar a {
-    text-decoration: none; /* Remove underline from links */
-    color: #61dafb; /* Color for the links */
-    font-weight: bold; /* Bold font for better visibility */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
 }
 
-.navbar .brand a {
-    font-size: 1.5em; /* Larger font size for the company name */
-    color: white; /* Change the color of the brand name */
+
+/* Desktop view - hide the hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #282c34;
+        flex-direction: column;
+        width: 100%;
+        max-width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        padding: 10px 20px;
+        display: none;
+    }
+
+    /* Toggle the dropdown menu */
+    .nav-links.active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+    }
 }

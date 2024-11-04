@@ -1,25 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css'; // Import the CSS file for styling
+import './NavBar.css';
 
 const NavBar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
-        <nav>
-            <ul className="navbar">
-                <li className="brand">
-                    <Link to="/">Ryuworks</Link>
+        <nav className="navbar">
+            <div className="brand">
+                <Link to="/">Ryuworks</Link>
+            </div>
+            <div className="hamburger" onClick={toggleMenu}>
+                &#9776; {/* Unicode for hamburger icon */}
+            </div>
+            <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+                <li>
+                    <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
                 </li>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/about-us" onClick={() => setMenuOpen(false)}>About Us</Link>
                 </li>
                 <li>
-                    <Link to="/about-us">About Us</Link>
+                    <Link to="/expertise" onClick={() => setMenuOpen(false)}>Expertise</Link>
                 </li>
                 <li>
-                    <Link to="/expertise">Expertise</Link>
-                </li>
-                <li>
-                    <Link to="/our-products">Our Products</Link>
+                    <Link to="/our-products" onClick={() => setMenuOpen(false)}>Our Products</Link>
                 </li>
             </ul>
         </nav>

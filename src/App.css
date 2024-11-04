@@ -41,7 +41,3 @@
   }
 }
 
-/* Removed flex properties from h1 */
-h1 {
-  margin: 0; /* Remove default margins */
-}
