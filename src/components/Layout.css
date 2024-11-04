@@ -1,9 +1,16 @@
-/* Layout.css */
+/* Desktop Background */
 .layout {
-    background-image: url('../assets/paper.svg'); 
+    background-image: url('../assets/finalbackground.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center;
     min-height: 100vh;
+}
+
+/* Mobile-specific Background */
+@media (max-width: 768px) {
+    .layout {
+        background-image: url('../assets/mobilebackground.svg'); /* Mobile-specific background */
+    }
 }

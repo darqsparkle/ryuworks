@@ -8,7 +8,7 @@
 
 /* In App.css */
 body {
-  background-image: url(./assets/paper.svg); /* or .png */
+  background-image: url(./assets/finalbackground.svg); /* or .png */
   background-size: cover; /* Ensure it covers the entire viewport */
   background-repeat: no-repeat;
   background-attachment: fixed; /* Keeps it fixed on scroll */
