@@ -1,12 +1,13 @@
 import React from 'react';
+import './Home.css';
 
-function Home() {
-  return (
-    <div>
-        <h2>Home Page</h2>
-        <h3>We are COOKING SOMETHING</h3>
-    </div>
-  );
-}
+const Home = () => {
+    return (
+        <div className="home-container">
+            <h1>WE ARE COOKING SOMETHING</h1>
+            <p>Stay Tuned🍻🍻 </p>
+        </div>
+    );
+};
 
 export default Home;

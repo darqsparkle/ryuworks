@@ -3,8 +3,8 @@ import React from 'react';
 function OurProducts() {
   return(
     <div>
-        <h2>Our Products</h2>
-        <h3>We are COOKING SOMETHING</h3>
+        
+        <h1>We are COOKING SOMETHING</h1>
     </div>
   );
 }

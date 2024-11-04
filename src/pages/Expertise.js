@@ -3,8 +3,7 @@ import React from 'react';
 function Expertise() {
   return(
     <div>
-        <h2>Expertise</h2>
-        <h3>We are COOKING SOMETHING</h3>
+        <h1>We are COOKING SOMETHING</h1>
     </div>
   );;
 }
