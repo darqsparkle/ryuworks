@@ -1,0 +1,26 @@
+nav {
+    background-color: #282c34; /* Background color for the navbar */
+    padding: 10px 20px; /* Spacing around the navbar */
+}
+
+.navbar {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.navbar li {
+    margin: 0 15px; /* Spacing between items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #61dafb; /* Color for the links */
+    font-weight: bold; /* Bold font for better visibility */
+}
+
+.navbar .brand a {
+    font-size: 1.5em; /* Larger font size for the company name */
+    color: white; /* Change the color of the brand name */
+}
