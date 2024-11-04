@@ -4,9 +4,9 @@ import './App.css';
 function App() {
   return (
     <div>
-      It is ryuworks
-      <br />
-      the web Development Company
+      <h1>
+        SOMETHING COOKING
+      </h1>
     </div>
   );
 }
