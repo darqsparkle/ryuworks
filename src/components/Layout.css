@@ -1,0 +1,9 @@
+/* Layout.css */
+.layout {
+    background-image: url('../assets/paper.svg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+}

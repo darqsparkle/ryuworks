@@ -1,17 +1,33 @@
+/* Home Container Styles */
 .home-container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    height: 100vh; 
-    text-align: center; 
+    height: 100vh;
+    text-align: center;
 }
 
+/* Image Style */
+.home-container img {
+    width: 450px; /* Set a custom width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* Add space between the image and the text */
+}
+
+/* Title Style */
 .home-container h1 {
     font-size: 2.5em;
     color: #282c34;
 }
 
+/* Highlighted Word Style */
+.highlighted-word {
+    color: rgb(156, 59, 55);
+    font-style: italic;
+}
+
+/* Subtitle Style */
 .home-container p {
     font-size: 1.2em;
     color: #555;
